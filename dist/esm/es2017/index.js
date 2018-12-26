@@ -1,0 +1,1 @@
+// AgcAverageDailyGain: ES Module

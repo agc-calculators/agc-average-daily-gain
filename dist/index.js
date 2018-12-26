@@ -1,0 +1,1 @@
+// AgcAverageDailyGain: CommonJS Main

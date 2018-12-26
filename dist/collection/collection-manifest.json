@@ -1,0 +1,105 @@
+{
+  "components": [
+    {
+      "tag": "agc-average-daily-gain",
+      "dependencies": [],
+      "componentClass": "AgcAverageDailyGain",
+      "componentPath": "components/agc-average-daily-gain/agc-average-daily-gain.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-average-daily-gain-progress",
+      "dependencies": [],
+      "componentClass": "AgcAverageDailyGainProgress",
+      "componentPath": "components/agc-average-daily-gain-progress/agc-average-daily-gain-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-average-daily-gain-results",
+      "dependencies": [],
+      "componentClass": "AgcAverageDailyGainResults",
+      "componentPath": "components/agc-average-daily-gain-results/agc-average-daily-gain-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-average-daily-gain-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcAverageDailyGainResultsPlaceholder",
+      "componentPath": "components/agc-average-daily-gain-results-placeholder/agc-average-daily-gain-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

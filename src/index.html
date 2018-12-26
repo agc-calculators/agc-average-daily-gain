@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <link rel="stylesheet" href="/build/agc-average-daily-gain.css" type="text/css" />
+  <script src="/build/agc-average-daily-gain.js"></script>
+</head>
+<body>
+
+  <agc-average-daily-gain socket="example" mode="full">
+    <div slot="results">
+      <agc-average-daily-gain-results socket="example">
+        <div slot="empty">
+          <agc-average-daily-gain-results-placeholder></agc-average-daily-gain-results-placeholder>
+        </div>
+      </agc-average-daily-gain-results>
+    </div>
+  </agc-average-daily-gain>
+
+</body>
+</html>
